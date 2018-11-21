@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-image: url('avobackground.jpg');
+  color: darkgreen;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 60px auto auto;
+  grid-template-areas: "headerleft headerright"
+                        "left right"
+                        "footerleft footerright"
+}
+
+h1{
+  font-family: monospace;
+  font-weight: lighter;
+  background-color: white;
+  color: darkgreen;
+  border: 2px white;
+  grid-area: headerleft;
+}
+
+#mySearch {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  grid-area: headerright;
+}
+
+#nutrition-table{
+  grid-area: left;
+  /* background: white; */
+}
+
+#all-ingredients {
+  width: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+  grid-area: right;
+}
+
+
+#myTable {
+  /* border-collapse: collapse; */
+  /* border: 1px solid #ddd; */
+  font-size: 18px;
+  background-color: darkgreen;
+  color: darkgreen;
+  font-family: Copperplate Gothic Light, sans-serif;
+  padding: 2px;
+
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+#nutrition-table th, #nutrition-table td {
+  text-align: left;
+}
+
+#nutrition-table tr.header, #nutrition-table tr:hover {
+  background-color: #a3e5db;
+}
+
+#nutritional-profile {
+  background-color: white
+  font-family: monospace;
+  color: darkgreen;
+  border: 2px;
+  width: 240px;
+  grid-area: footerleft;
+}
+
+h2 {
+  font-family: monospace;
+  font-weight: lighter;
+  /* font-size: 28px; */
+  text-decoration: underline;
+  background-color: white;
+  color: darkgreen;
+  /* width: 240px; */
+}
+
+th{
+  background-color: white;
+  color: darkgreen;
+  border: 2px darkgreen;
+}
+
+td {
+  background: white;
+}
+
+
+#vitamin{
+  background: transparent;
+}
+
+#delete {
+  background-color: green;
+  color: white;
+}
